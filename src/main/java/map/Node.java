@@ -2,7 +2,9 @@ package map;
 
 import graph.Vertex;
 
-public class Node {
+import java.io.Serializable;
+
+public class Node implements Serializable {
     private Vertex vertex;
     private Circle circle;
 

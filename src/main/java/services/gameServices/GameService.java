@@ -1,11 +1,7 @@
 package services.gameServices;
 
 import console.Printer;
-import game.ScotlandYardGame;
-import game.Ticket;
-import game.TypePlayer;
-import game.TypeTicket;
-import graph.Edge;
+import game.*;
 import graph.Graph;
 import graph.Vertex;
 import map.GameMap;
@@ -22,7 +18,7 @@ import java.util.*;
 
 import static game.GameState.*;
 
-public class GameService {
+public class GameService  {
 
     private MisterXService misterXService = new MisterXService();
     private DetectiveService detectiveService = new DetectiveService();
@@ -38,6 +34,7 @@ public class GameService {
         setLocationMaps(game);
         setStartStations(game);
         ticketsDistribution(game);
+        game.setTravels(new HashMap<>());
         game.setStations(new LinkedList<>(game.getGraph().getVertices()));
         game.setState(PLAYING);
     }
@@ -83,7 +80,7 @@ public class GameService {
     }
 
     private boolean hasMove(Player player, ScotlandYardGame game) {
-       Detective detective = (Detective) player;
+        Detective detective = (Detective) player;
         Map<Player, Vertex> playerVertexMap = game.getPlayerVertexMap();
 //        Map<TypeTicket, Integer> tickets = player.getTicketsMap();
         List<Ticket> tickets = detective.getTickets();
@@ -91,24 +88,23 @@ public class GameService {
     }
 
 
-    public void play(ScotlandYardGame game) throws InterruptedException {
-        for (int i = 0; i < game.getMoveAmount(); i++) {
+    public void play(ScotlandYardGame game) {
+        printer.printGameState(game);
+        printer.printPlayers(game);
+        printer.printLocations(game);
+//            game.getVertexPlayerMap().clear();
+        misterXMove(game);
+        detectivesMove(game);
+        setState(game);
+        if (game.getState().equals(DETECTIVES_VICTORY)) {
             printer.printGameState(game);
-            printer.printPlayers(game);
-            printer.printLocations(game);
-            game.getVertexPlayerMap().clear();
-            misterXMove(game);
-            detectivesMove(game);
-            setState(game);
-            if (game.getState().equals(DETECTIVES_VICTORY)) {
-                printer.printGameState(game);
-                return;
-            }
+            return;
         }
-        if (game.getState().equals(PLAYING)) {
-            game.setState(MISTER_X_VICTORY);
-            printer.printGameState(game);
-        }
+//        if (game.getState().equals(PLAYING)) {
+//            game.setState(MISTER_X_VICTORY);
+//            printer.printGameState(game);
+//        }
+
     }
 
     private void detectivesMove(ScotlandYardGame game) {
@@ -117,10 +113,13 @@ public class GameService {
             if (!detectiveService.hasTickets(detective)) continue;
             Ticket currentTicket = null;
             Vertex targetStation = null;
-            while (targetStation == null) {
-                currentTicket = detectiveOnGameService.getCurrentTicket(detective);
-                targetStation = detectiveOnGameService.setTargetStation(detective, game, currentTicket);
-            }
+//            while (targetStation == null) {
+            currentTicket = detectiveOnGameService.getCurrentTicket(detective);
+            targetStation = detectiveOnGameService.setTargetStation(detective, game, currentTicket);
+//            }
+            if (targetStation == null) return;
+            Travel travel = getTravel(detective, targetStation, currentTicket, game);
+            game.getTravels().put(detective, travel);
             detectiveService.moveTo(detective, game, targetStation, currentTicket);
         }
     }
@@ -130,11 +129,18 @@ public class GameService {
         if (!misterXService.hasTickets(misterX)) return;
         Ticket currentTicket = null;
         Vertex targetStation = null;
-        while (targetStation == null) {
-            currentTicket = misterXOnGameService.getCurrentTicket(misterX);
-            targetStation = misterXOnGameService.setTargetStation(misterX, game, currentTicket);
-        }
+//        while (targetStation == null) {
+        currentTicket = misterXOnGameService.getCurrentTicket(misterX);
+        targetStation = misterXOnGameService.setTargetStation(misterX, game, currentTicket);
+//        }
+        if (targetStation == null) return;
+        Travel travel = getTravel(misterX, targetStation, currentTicket, game);
+        game.getTravels().put(misterX, travel);
         misterXService.moveTo(misterX, game, targetStation, currentTicket);
+    }
+
+    private Travel getTravel(Player player, Vertex targetStation, Ticket currentTicket, ScotlandYardGame game) {
+        return  new Travel(game.getPlayerVertexMap().get(player), targetStation, currentTicket);
     }
 
     public void setStartStations(ScotlandYardGame game) {
@@ -148,12 +154,12 @@ public class GameService {
         board--;
         stations.removeIf(station -> station.equals(misterXStartStation));
         for (Player detective : detectives) {
-//            Vertex startStation = stations.get((int) (Math.random() * board));
-//            setStartStation(detective, startStation, game);
-//            board--;
-//            stations.removeIf(station -> station.equals(startStation));
-        Vertex start = graphService.getVertex(game.getGraph(), 7);
-        setStartStation(detective, start, game);
+            Vertex startStation = stations.get((int) (Math.random() * board));
+            setStartStation(detective, startStation, game);
+            board--;
+            stations.removeIf(station -> station.equals(startStation));
+//        Vertex start = graphService.getVertex(game.getGraph(), 7);
+//        setStartStation(detective, start, game);
         }
     }
 

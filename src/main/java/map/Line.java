@@ -4,8 +4,9 @@ import graph.Edge;
 
 import java.awt.*;
 import java.awt.geom.Line2D;
+import java.io.Serializable;
 
-public class Line {
+public class Line implements Serializable {
     private Line2D line;
     private Edge edge;
     private Color color;
@@ -27,7 +28,7 @@ public class Line {
         return line;
     }
 
-    Edge getEdge() {
+    public Edge getEdge() {
         return edge;
     }
 

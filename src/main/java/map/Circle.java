@@ -1,10 +1,13 @@
 package map;
 
+import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
+import java.io.Serializable;
 
-public class Circle extends Ellipse2D.Double {
-   public static final int RADIUS = 15;
+public class Circle extends Ellipse2D.Double implements Serializable {
+    public static final int RADIUS = 15;
+    private Color color = Color.WHITE;
     private int x;
     private int y;
 
@@ -12,6 +15,14 @@ public class Circle extends Ellipse2D.Double {
     public Circle(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
     }
 
     @Override

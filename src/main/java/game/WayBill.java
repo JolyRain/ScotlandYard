@@ -2,9 +2,10 @@ package game;
 
 import graph.Vertex;
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class WayBill {
+public class WayBill  {
 
     private Map<Vertex, TypeTicket> stepsMap;
     private Integer stepsToShow;

@@ -1,5 +1,6 @@
 package frame;
 
+import drawer.World;
 import utils.Defaults;
 import map.GameMap;
 
@@ -12,7 +13,7 @@ public class AppService {
         initFrame(app);
         initDrawPanel(app);
 //        initLeftPanel(app);
-        fileService.readDefaultGraph(app.getFileManager(), app.getGameMap());
+        fileService.readDefaultGraph(app.getFileManager(), app.getWorld());
 
     }
 
@@ -37,17 +38,8 @@ public class AppService {
         app.getFileManager().setDrawPanel(drawPanel);
     }
 
-    private void initLeftPanel(App app) {
-        JPanel leftPanel = new JPanel();
-        GameMap gameMap = app.getGameMap();
-        FileManager fileManager = app.getFileManager();
-        JButton button = new JButton("Read file");
-        button.setFont(Defaults.FONT_BUTTON);
-        button.addActionListener( e -> fileService.readGraphFromFile(fileManager, gameMap));
-        leftPanel.add(button);
-        leftPanel.setBounds(0, 0, Defaults.LEFT_PANEL_WIDTH, Defaults.FRAME_HEIGHT);
-        app.getMainFrame().add(leftPanel);
-        app.setLeftPanel(leftPanel);
+    public void repaint(App app) {
+        app.getFileManager().getDrawPanel().repaint();
     }
 
     public void show(App app) {

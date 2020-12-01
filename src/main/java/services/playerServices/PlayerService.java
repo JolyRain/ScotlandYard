@@ -29,5 +29,13 @@ public interface PlayerService {
         return player.getTicketsMap().get(typeTicket) > 0;
     }
 
+    default void setCurrentStations(Player player, Vertex targetStation, ScotlandYardGame game) {
+        Map<Player, Vertex> playerVertexMap = game.getPlayerVertexMap();
+        Map<Vertex, Player> vertexPlayerMap = game.getVertexPlayerMap();
+        playerVertexMap.put(player, targetStation);
+        vertexPlayerMap.entrySet().removeIf(entry -> entry.getValue().equals(player));
+        vertexPlayerMap.put(targetStation, player);
+    }
+
 
 }

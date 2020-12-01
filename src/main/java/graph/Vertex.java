@@ -1,10 +1,11 @@
 package graph;
 
+import java.io.Serializable;
 import java.util.*;
 
-public class Vertex {
+public class Vertex  {
     private Integer stationNumber;
-    private Map<TypeRoad, List<Edge>> roadMap;
+    private  Map<TypeRoad, List<Edge>> roadMap;
 
     public Vertex() {
         roadMap = new HashMap<>();

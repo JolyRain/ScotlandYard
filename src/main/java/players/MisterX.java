@@ -3,9 +3,10 @@ package players;
 import game.TypePlayer;
 import game.WayBill;
 
+import java.io.Serializable;
 import java.util.HashMap;
 
-public class MisterX extends Player {
+public class MisterX extends Player  {
 
     private Integer amountTaxiTickets;
     private Integer amountBusTickets;

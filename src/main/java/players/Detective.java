@@ -2,7 +2,9 @@ package players;
 
 import game.TypePlayer;
 
-public class Detective extends Player {
+import java.io.Serializable;
+
+public class Detective extends Player  {
 
     private Integer amountTaxiTickets;
     private Integer amountBusTickets;
@@ -13,9 +15,9 @@ public class Detective extends Player {
     public Detective(String name) {
         super(TypePlayer.DETECTIVE);
         this.name = name;
-        amountTaxiTickets = 0; //10
-        amountBusTickets = 0; //8
-        amountMetroTickets = 1; //4
+        amountTaxiTickets = 10;
+        amountBusTickets = 8;
+        amountMetroTickets = 4;
     }
 
     public Integer getAmountTaxiTickets() {

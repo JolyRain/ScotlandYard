@@ -6,16 +6,15 @@ import graph.Vertex;
 import players.MisterX;
 import players.Player;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class ScotlandYardGame {
+public class ScotlandYardGame  {
     public static final Map<TypeTicket, TypeRoad> TICKET_ROAD_MAP = new HashMap<>();
     public static final Map<TypeTicket, TypeRoad> ROAD_TICKET_MAP = new HashMap<>();
-    private Integer moveAmount;
-    private Integer detectivesAmount;
 
     static {
         TICKET_ROAD_MAP.put(TypeTicket.TAXI, TypeRoad.TAXI);
@@ -26,6 +25,8 @@ public class ScotlandYardGame {
         ROAD_TICKET_MAP.put(TypeTicket.TAXI, TypeRoad.TAXI);
     }
 
+    private Integer moveAmount;
+    private Integer detectivesAmount;
     private Graph graph;
     private GameState gameState;
     private Map<Vertex, Player> vertexPlayerMap;
@@ -33,6 +34,7 @@ public class ScotlandYardGame {
     private Set<Player> detectives;
     private MisterX misterX;
     private List<Vertex> stations;
+    private Map<Player, Travel> travels;
 
     public ScotlandYardGame(Integer moveAmount, Integer detectivesAmount) {
         this.moveAmount = moveAmount;
@@ -91,6 +93,10 @@ public class ScotlandYardGame {
         return stations;
     }
 
+    public void setStations(List<Vertex> stations) {
+        this.stations = stations;
+    }
+
     public Integer getMoveAmount() {
         return moveAmount;
     }
@@ -107,8 +113,12 @@ public class ScotlandYardGame {
         this.detectivesAmount = detectivesAmount;
     }
 
-    public void setStations(List<Vertex> stations) {
-        this.stations = stations;
+    public Map<Player, Travel> getTravels() {
+        return travels;
+    }
+
+    public void setTravels(Map<Player, Travel> travels) {
+        this.travels = travels;
     }
 
     @Override

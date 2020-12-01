@@ -18,11 +18,7 @@ public class DetectiveService implements PlayerService {
     @Override
     public void moveTo(Player player, ScotlandYardGame game, Vertex targetStation, Ticket ticket) {
         Detective detective = (Detective) player;
-        Map<Player, Vertex> playerVertexMap = game.getPlayerVertexMap();
-        Map<Vertex, Player> vertexPlayerMap = game.getVertexPlayerMap();
-        playerVertexMap.put(detective, targetStation);
-//        vertexPlayerMap.remove(playerVertexMap.get(player));
-        vertexPlayerMap.put(targetStation, detective);
+       setCurrentStations(player, targetStation, game);
         removeTicket(detective, game.getMisterX(), ticket);
         printer.printMove(player, targetStation, ticket);
     }
@@ -32,7 +28,4 @@ public class DetectiveService implements PlayerService {
         misterXService.addTicket(misterX, ticket);
     }
 
-    private void setCurrentStation(Detective detective, ScotlandYardGame game, Vertex targetStation) {
-
-    }
 }

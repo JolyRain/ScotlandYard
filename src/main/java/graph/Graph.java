@@ -1,10 +1,11 @@
 package graph;
 
+import java.io.Serializable;
 import java.util.*;
 
-public class Graph {
+public class Graph   {
 
-    private Map<Vertex, Set<Vertex>> adjacentVerticesMap = new HashMap<>();
+    private  Map<Vertex, Set<Vertex>> adjacentVerticesMap = new HashMap<>();
     private Set<Vertex> vertices = new HashSet<>();
     private List<Edge> edges = new LinkedList<>();
 

@@ -2,9 +2,10 @@ package map;
 
 import graph.Graph;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class GameMap {
+public class GameMap  implements Serializable {
     private List<Node> nodes;
     private List<Line> lines;
     private Graph graph;

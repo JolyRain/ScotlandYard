@@ -25,10 +25,7 @@ public class MisterXService implements PlayerService {
         removeTicket(misterX, ticket);
         stepsToShow++;
         wayBill.setStepsToShow(stepsToShow);
-        Map<Player, Vertex> playerVertexMap = game.getPlayerVertexMap();
-        Map<Vertex, Player> vertexPlayerMap = game.getVertexPlayerMap();
-        playerVertexMap.put(misterX, targetStation);
-        vertexPlayerMap.put(targetStation, misterX);
+        setCurrentStations(player, targetStation, game);
         printer.printMove(player, targetStation, ticket);
     }
 

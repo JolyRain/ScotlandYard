@@ -1,5 +1,7 @@
 package frame;
 
+import drawer.World;
+import drawer.WorldDrawer;
 import map.GameMap;
 
 import javax.swing.*;
@@ -7,6 +9,8 @@ import java.io.File;
 import java.util.Scanner;
 
 public class FileService {
+
+    private WorldDrawer worldDrawer = new WorldDrawer();
 
     FileService() {
     }
@@ -18,35 +22,36 @@ public class FileService {
         return fileName;
     }
 
-    void readDefaultGraph(FileManager fileManager, GameMap gameMap) {
+    void readDefaultGraph(FileManager fileManager, World world) {
         DrawPanel drawPanel = fileManager.getDrawPanel();
         try (Scanner scanner = new Scanner(fileManager.getDEFAULT_GRAPH_FILE()))  {
-            drawPanel.readGraphFromFile(gameMap, scanner);
-            drawPanel.setGameMap(gameMap);
+            worldDrawer.readGraphFromFile(world, scanner);
+            drawPanel.setWorld(world);
+
             drawPanel.repaint();
         } catch (Exception exc) {
-            drawPanel.clear(gameMap);
+            drawPanel.clear(world);
             JOptionPane.showMessageDialog(null, "Wrong file!",
                     "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
 
-    void readGraphFromFile(FileManager fileManager, GameMap gameMap) {
+    void readGraphFromFile(FileManager fileManager, World world) {
         JFileChooser fileChooser = new JFileChooser();
         DrawPanel drawPanel = fileManager.getDrawPanel();
-        fileChooser.setCurrentDirectory(new File("./src/mapsFiles"));
+        fileChooser.setCurrentDirectory(new File("./src/files"));
         fileChooser.addChoosableFileFilter(fileManager.getGRAPH_FILTER());
         fileChooser.setAcceptAllFileFilterUsed(false);
         fileChooser.setDialogType(JFileChooser.OPEN_DIALOG);
 
         if (fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
             try (Scanner scanner = new Scanner(fileChooser.getSelectedFile())) {
-                drawPanel.readGraphFromFile(gameMap, scanner);
-                drawPanel.setGameMap(gameMap);
+                worldDrawer.readGraphFromFile(world, scanner);
+                drawPanel.setWorld(world);
                 drawPanel.repaint();
             } catch (Exception exc) {
-                drawPanel.clear(gameMap);
+                drawPanel.clear(world);
                 JOptionPane.showMessageDialog(null, "Wrong file!",
                         "Error", JOptionPane.ERROR_MESSAGE);
             }

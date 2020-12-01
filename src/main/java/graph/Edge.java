@@ -1,8 +1,9 @@
 package graph;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Edge {
+public class Edge  {
     private Vertex startVertex;
     private Vertex endVertex;
     private TypeRoad type;

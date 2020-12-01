@@ -1,37 +1,20 @@
 package frame;
 
+import drawer.World;
 import map.GameMap;
 
 import javax.swing.*;
+import java.io.Serializable;
 
-public class App {
+public class App  {
     private JFrame mainFrame;
     private DrawPanel drawPanel;
-    private JPanel leftPanel;
     private FileManager fileManager;
-    private GameMap gameMap;
+    private World world;
 
-    public App(JFrame mainFrame, DrawPanel drawPanel, JPanel leftPanel, FileManager fileManager, GameMap gameMap) {
-        this.mainFrame = mainFrame;
-        this.drawPanel = drawPanel;
-        this.leftPanel = leftPanel;
+    public App(FileManager fileManager, World world) {
         this.fileManager = fileManager;
-        this.gameMap = gameMap;
-    }
-
-    public App(FileManager fileManager, GameMap gameMap) {
-        this.fileManager = fileManager;
-        this.gameMap = gameMap;
-    }
-
-    public App(GameMap gameMap) {
-        this.gameMap = gameMap;
-    }
-
-    public App(JFrame mainFrame, DrawPanel drawPanel, JPanel leftPanel) {
-        this.mainFrame = mainFrame;
-        this.drawPanel = drawPanel;
-        this.leftPanel = leftPanel;
+        this.world = world;
     }
 
     FileManager getFileManager() {
@@ -39,12 +22,16 @@ public class App {
     }
 
 
-    GameMap getGameMap() {
-        return gameMap;
+    public World getWorld() {
+        return world;
     }
 
-    public void setGameMap(GameMap gameMap) {
-        this.gameMap = gameMap;
+    public void setWorld(World world) {
+        this.world = world;
+    }
+
+    public DrawPanel getDrawPanel() {
+        return drawPanel;
     }
 
     JFrame getMainFrame() {
@@ -59,9 +46,6 @@ public class App {
         this.drawPanel = drawPanel;
     }
 
-    void setLeftPanel(JPanel leftPanel) {
-        this.leftPanel = leftPanel;
-    }
 
 
 }

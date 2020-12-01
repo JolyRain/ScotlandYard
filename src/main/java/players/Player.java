@@ -4,12 +4,13 @@ import game.Ticket;
 import game.TypeTicket;
 import game.TypePlayer;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public abstract class Player {
+public abstract class Player  {
 
     private final TypePlayer TYPE;
     private Map<TypeTicket, Integer> ticketsMap;

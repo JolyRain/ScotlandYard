@@ -1,8 +1,9 @@
 package game;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Ticket {
+public class Ticket  {
 
     private TypeTicket type;
 
