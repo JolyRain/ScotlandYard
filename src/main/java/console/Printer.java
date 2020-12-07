@@ -3,11 +3,9 @@ package console;
 import game.ScotlandYardGame;
 import game.Ticket;
 import game.TypePlayer;
-import graph.Graph;
 import graph.Vertex;
 import players.MisterX;
 import players.Player;
-import services.playerServices.PlayerService;
 
 import java.util.Map;
 import java.util.Set;
@@ -16,24 +14,24 @@ public class Printer implements Printable {
 
     public void printGameState(ScotlandYardGame game) {
         printLongSeparator();
-        print(game.getState().toString(), ANSI_GREEN);
+        print("MOVE--" + game.getCurrentMove() + " " + game.getState().toString(), ANSI_GREEN );
         printLongSeparator();
     }
 
     private void printPlayer(Player player, ScotlandYardGame game) {
         String playerString = player.toString().concat(player.ticketsToString());
 
-        if (player.getTYPE().equals(TypePlayer.DETECTIVE)) {
+        if (player.getTypePlayer().equals(TypePlayer.DETECTIVE)) {
             print(playerString, ANSI_BLUE);
         }
-        if (player.getTYPE().equals(TypePlayer.MISTER_X)) {
+        if (player.getTypePlayer().equals(TypePlayer.MISTER_X)) {
             print(playerString, ANSI_RED);
         }
     }
 
     public void printPlayers(ScotlandYardGame game) {
         print("PLAYERS", ANSI_CYAN);
-        MisterX misterX = game.getMisterX();
+        MisterX misterX = (MisterX) game.getMisterX();
         Set<Player> detectives = game.getDetectives();
         printPlayer(misterX, game);
         for (Player detective : detectives) {
@@ -43,9 +41,8 @@ public class Printer implements Printable {
     }
 
     public void printMove(Player player, Vertex targetStation, Ticket ticket) {
-        print("MOVE", ANSI_CYAN);
+
         print(player.toString() + " ---" + ticket.getType() + "---> " + targetStation, ANSI_RESET);
-        printShortSeparator();
     }
 
     public void printLocations(ScotlandYardGame game) {
@@ -80,7 +77,7 @@ public class Printer implements Printable {
                 "---------------------------------------------------------", ANSI_BLACK);
     }
 
-    private void printShortSeparator() {
+    public void printShortSeparator() {
         print("----------------------------------", ANSI_WHITE);
     }
 

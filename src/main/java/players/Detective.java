@@ -1,48 +1,70 @@
 package players;
 
+import game.Ticket;
 import game.TypePlayer;
+import game.TypeTicket;
 
-import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 public class Detective extends Player  {
 
-    private Integer amountTaxiTickets;
-    private Integer amountBusTickets;
-    private Integer amountMetroTickets;
+    private Integer maxAmountTaxiTickets;
+
+    private Integer maxAmountBusTickets;
+
+    private Integer maxAmountMetroTickets;
 
     private String name;
 
     public Detective(String name) {
         super(TypePlayer.DETECTIVE);
         this.name = name;
-        amountTaxiTickets = 10;
-        amountBusTickets = 8;
-        amountMetroTickets = 4;
+        maxAmountTaxiTickets = 10;
+        maxAmountBusTickets = 8;
+        maxAmountMetroTickets = 4;
     }
 
-    public Integer getAmountTaxiTickets() {
-        return amountTaxiTickets;
+    public Detective(TypePlayer typePlayer, Map<TypeTicket, Integer> ticketsMap, List<Ticket> tickets, Integer maxAmountTaxiTickets, Integer maxAmountBusTickets, Integer maxAmountMetroTickets, String name) {
+        super(typePlayer, ticketsMap, tickets);
+        this.maxAmountTaxiTickets = maxAmountTaxiTickets;
+        this.maxAmountBusTickets = maxAmountBusTickets;
+        this.maxAmountMetroTickets = maxAmountMetroTickets;
+        this.name = name;
     }
 
-    public void setAmountTaxiTickets(Integer amountTaxiTickets) {
-        this.amountTaxiTickets = amountTaxiTickets;
+    public Detective() {
     }
 
-    public Integer getAmountBusTickets() {
-        return amountBusTickets;
+    public void setTypePlayer(TypePlayer typePlayer) {
+        super.setTypePlayer(typePlayer);
     }
 
-    public void setAmountBusTickets(Integer amountBusTickets) {
-        this.amountBusTickets = amountBusTickets;
+    public Integer getMaxAmountTaxiTickets() {
+        return maxAmountTaxiTickets;
     }
 
-    public Integer getAmountMetroTickets() {
-        return amountMetroTickets;
+    public void setMaxAmountTaxiTickets(Integer maxAmountTaxiTickets) {
+        this.maxAmountTaxiTickets = maxAmountTaxiTickets;
     }
 
-    public void setAmountMetroTickets(Integer amountMetroTickets) {
-        this.amountMetroTickets = amountMetroTickets;
+    public Integer getMaxAmountBusTickets() {
+        return maxAmountBusTickets;
     }
+
+    public void setMaxAmountBusTickets(Integer maxAmountBusTickets) {
+        this.maxAmountBusTickets = maxAmountBusTickets;
+    }
+
+    public Integer getMaxAmountMetroTickets() {
+        return maxAmountMetroTickets;
+    }
+
+    public void setMaxAmountMetroTickets(Integer maxAmountMetroTickets) {
+        this.maxAmountMetroTickets = maxAmountMetroTickets;
+    }
+
 
     public String getName() {
         return name;
@@ -55,6 +77,6 @@ public class Detective extends Player  {
 
     @Override
     public String toString() {
-        return this.getTYPE().toString() + "-" + name;
+        return this.getTypePlayer().toString() + "-" + name;
     }
 }

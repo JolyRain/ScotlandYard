@@ -14,6 +14,9 @@ public class Edge  {
         this.type = type;
     }
 
+    public Edge() {
+    }
+
     public Vertex getStartVertex() {
         return startVertex;
     }
@@ -47,6 +50,6 @@ public class Edge  {
 
     @Override
     public String toString() {
-        return "<" + startVertex + ", " + endVertex + ">" + " {" + type + "}";
+        return "<" + startVertex.getStationNumber() + ", " + endVertex.getStationNumber() + ">" + " {" + type + "}";
     }
 }

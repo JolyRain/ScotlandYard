@@ -29,7 +29,7 @@ public class MisterXService implements PlayerService {
         printer.printMove(player, targetStation, ticket);
     }
 
-    public void addTicket(MisterX misterX, Ticket ticket) {
+    public void addTicket(Player misterX, Ticket ticket) {
         Map<TypeTicket, Integer> ticketsMap = misterX.getTicketsMap();
         Integer amountTickets = ticketsMap.get(ticket.getType());
         ticketsMap.put(ticket.getType(), amountTickets + 1);

@@ -1,21 +1,28 @@
 package graph;
 
-import java.io.Serializable;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import jdk.nashorn.internal.ir.annotations.Ignore;
+import serialize.jackson.VertexAdapter;
+
 import java.util.*;
 
-public class Vertex  {
+
+@JsonSerialize(using = VertexAdapter.class)
+public class Vertex {
     private Integer stationNumber;
-    private  Map<TypeRoad, List<Edge>> roadMap;
+
+    private Map<TypeRoad, List<Edge>> roadMap;
 
     public Vertex() {
-        roadMap = new HashMap<>();
-        roadMap.put(TypeRoad.TAXI, new LinkedList<>());
-        roadMap.put(TypeRoad.BUS, new LinkedList<>());
-        roadMap.put(TypeRoad.METRO, new LinkedList<>());
+        initMap();
     }
 
     public Vertex(Integer stationNumber) {
         this.stationNumber = stationNumber;
+        initMap();
+    }
+
+    private void initMap() {
         roadMap = new HashMap<>();
         roadMap.put(TypeRoad.TAXI, new LinkedList<>());
         roadMap.put(TypeRoad.BUS, new LinkedList<>());
@@ -53,6 +60,16 @@ public class Vertex  {
 
     @Override
     public String toString() {
-        return "{" + stationNumber + "}";
+        return "{" + stationNumber.toString() + "}";
+    }
+
+    public String ticketMapToString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(" ROADS = [ ");
+        for (Map.Entry<TypeRoad, List<Edge>> entry : roadMap.entrySet()) {
+            stringBuilder.append(entry.getKey()).append(" = ").append(entry.getValue()).append(" ");
+        }
+        stringBuilder.append("]");
+        return stringBuilder.toString();
     }
 }

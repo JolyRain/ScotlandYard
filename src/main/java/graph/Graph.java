@@ -1,11 +1,10 @@
 package graph;
 
-import java.io.Serializable;
+
 import java.util.*;
 
 public class Graph   {
 
-    private  Map<Vertex, Set<Vertex>> adjacentVerticesMap = new HashMap<>();
     private Set<Vertex> vertices = new HashSet<>();
     private List<Edge> edges = new LinkedList<>();
 
@@ -21,7 +20,7 @@ public class Graph   {
         this.edges = edges;
     }
 
-    public Map<Vertex, Set<Vertex>> getAdjacencyMap() {
-        return adjacentVerticesMap;
+    public void setVertices(Set<Vertex> vertices) {
+        this.vertices = vertices;
     }
 }

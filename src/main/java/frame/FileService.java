@@ -27,7 +27,6 @@ public class FileService {
         try (Scanner scanner = new Scanner(fileManager.getDEFAULT_GRAPH_FILE()))  {
             worldDrawer.readGraphFromFile(world, scanner);
             drawPanel.setWorld(world);
-
             drawPanel.repaint();
         } catch (Exception exc) {
             drawPanel.clear(world);

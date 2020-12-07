@@ -5,7 +5,7 @@ import graph.Graph;
 import java.io.Serializable;
 import java.util.List;
 
-public class GameMap  implements Serializable {
+public class GameMap {
     private List<Node> nodes;
     private List<Line> lines;
     private Graph graph;

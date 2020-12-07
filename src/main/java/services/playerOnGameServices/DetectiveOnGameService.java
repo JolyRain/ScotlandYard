@@ -8,7 +8,6 @@ import graph.Edge;
 import graph.TypeRoad;
 import graph.Vertex;
 import players.Detective;
-import players.MisterX;
 import players.Player;
 import services.graphServices.EdgeService;
 
@@ -36,7 +35,7 @@ public class DetectiveOnGameService implements PlayerOnGameService {
         Vertex currentStation = getCurrentStation(player, game);
         TypeTicket typeTicket = ticket.getType();
         Map<TypeRoad, List<Edge>> roadMap = currentStation.getRoadMap();
-        return roadMap.get(ScotlandYardGame.TICKET_ROAD_MAP.get(typeTicket));
+        return roadMap.get(game.TICKET_ROAD_MAP.get(typeTicket));
     }
 
     @Override
@@ -48,7 +47,7 @@ public class DetectiveOnGameService implements PlayerOnGameService {
         for (Edge road : availableRoads) {
             Vertex availableStation = edgeService.getNeededVertex(road, currentStation);
             Player playerOnStation = getPlayerOnStation(game, availableStation);
-            if (gameService.isFreeStation(availableStation, game) || playerOnStation.getTYPE().equals(TypePlayer.MISTER_X)) {
+            if (gameService.isFreeStation(availableStation, game) || playerOnStation.getTypePlayer().equals(TypePlayer.MISTER_X)) {
                 availableStations.add(availableStation);
             }
         }

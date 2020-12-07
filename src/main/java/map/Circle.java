@@ -5,7 +5,7 @@ import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
 import java.io.Serializable;
 
-public class Circle extends Ellipse2D.Double implements Serializable {
+public class Circle extends Ellipse2D.Double {
     public static final int RADIUS = 15;
     private Color color = Color.WHITE;
     private int x;

@@ -8,17 +8,22 @@ import map.GameMap;
 import players.Detective;
 import players.MisterX;
 import players.Player;
+import serialize.ISerializer;
+import serialize.gson.GsonSerializer;
 import services.graphServices.GraphService;
 import services.playerOnGameServices.DetectiveOnGameService;
 import services.playerOnGameServices.MisterXOnGameService;
 import services.playerServices.DetectiveService;
 import services.playerServices.MisterXService;
+import utils.Defaults;
 
+import java.io.IOException;
 import java.util.*;
 
+import static console.Printable.ANSI_CYAN;
 import static game.GameState.*;
 
-public class GameService  {
+public class GameService {
 
     private MisterXService misterXService = new MisterXService();
     private DetectiveService detectiveService = new DetectiveService();
@@ -26,6 +31,7 @@ public class GameService  {
     private DetectiveOnGameService detectiveOnGameService = new DetectiveOnGameService();
     private GraphService graphService = new GraphService();
     private Printer printer = new Printer();
+    private ISerializer serializer = new GsonSerializer();
 
     public void initGame(ScotlandYardGame game) {
 //        initGraph(game);
@@ -72,7 +78,7 @@ public class GameService  {
         for (Map.Entry<Player, Vertex> playerVertexEntry : playerVertexMap.entrySet()) {
             Player currentPlayer = playerVertexEntry.getKey();
             Vertex currentVertex = playerVertexEntry.getValue();
-            if (currentVertex.equals(misterXStation) && currentPlayer.getTYPE().equals(TypePlayer.DETECTIVE)) {
+            if (currentVertex.equals(misterXStation) && currentPlayer.getTypePlayer().equals(TypePlayer.DETECTIVE)) {
                 game.setState(DETECTIVES_VICTORY);
                 return;
             } else game.setState(PLAYING);
@@ -87,24 +93,34 @@ public class GameService  {
         return false;
     }
 
+    public void play(ScotlandYardGame game) throws IOException {
+        for (int i = game.getCurrentMove(); game.getCurrentMove() < game.getMoveAmount(); i++) {
+            game.setCurrentMove(i);
+            if (game.getCurrentMove() == 10) {
+//                serializer.serialize(game, Defaults.FILE_PATH_GSON);
+            }
+            move(game);
+            if (game.getState().equals(GameState.DETECTIVES_VICTORY)) {
+                break;
+            }
+        }
+        if (game.getState().equals(GameState.PLAYING)) {
+            game.setState(GameState.MISTER_X_VICTORY);
+            printer.printGameState(game);
+        }
+    }
 
-    public void play(ScotlandYardGame game) {
+    private void move(ScotlandYardGame game) {
         printer.printGameState(game);
         printer.printPlayers(game);
         printer.printLocations(game);
-//            game.getVertexPlayerMap().clear();
+        printer.print("MOVE", ANSI_CYAN);
         misterXMove(game);
         detectivesMove(game);
         setState(game);
         if (game.getState().equals(DETECTIVES_VICTORY)) {
             printer.printGameState(game);
-            return;
         }
-//        if (game.getState().equals(PLAYING)) {
-//            game.setState(MISTER_X_VICTORY);
-//            printer.printGameState(game);
-//        }
-
     }
 
     private void detectivesMove(ScotlandYardGame game) {
@@ -118,14 +134,14 @@ public class GameService  {
             targetStation = detectiveOnGameService.setTargetStation(detective, game, currentTicket);
 //            }
             if (targetStation == null) return;
-            Travel travel = getTravel(detective, targetStation, currentTicket, game);
-            game.getTravels().put(detective, travel);
+//            Travel travel = getTravel(detective, targetStation, currentTicket, game);
+//            game.getTravels().put(detective, travel);
             detectiveService.moveTo(detective, game, targetStation, currentTicket);
         }
     }
 
     private void misterXMove(ScotlandYardGame game) {
-        MisterX misterX = game.getMisterX();
+        Player misterX = game.getMisterX();
         if (!misterXService.hasTickets(misterX)) return;
         Ticket currentTicket = null;
         Vertex targetStation = null;
@@ -134,13 +150,13 @@ public class GameService  {
         targetStation = misterXOnGameService.setTargetStation(misterX, game, currentTicket);
 //        }
         if (targetStation == null) return;
-        Travel travel = getTravel(misterX, targetStation, currentTicket, game);
-        game.getTravels().put(misterX, travel);
+//        Travel travel = getTravel(misterX, targetStation, currentTicket, game);
+//        game.getTravels().put(misterX, travel);
         misterXService.moveTo(misterX, game, targetStation, currentTicket);
     }
 
     private Travel getTravel(Player player, Vertex targetStation, Ticket currentTicket, ScotlandYardGame game) {
-        return  new Travel(game.getPlayerVertexMap().get(player), targetStation, currentTicket);
+        return new Travel(game.getPlayerVertexMap().get(player), targetStation, currentTicket);
     }
 
     public void setStartStations(ScotlandYardGame game) {
@@ -148,7 +164,7 @@ public class GameService  {
         List<Vertex> stations = game.getStations();
         Collections.shuffle(stations);
         Set<Player> detectives = game.getDetectives();
-        MisterX misterX = game.getMisterX();
+        MisterX misterX = (MisterX) game.getMisterX();
         Vertex misterXStartStation = stations.get((int) (Math.random() * board));
         setStartStation(misterX, misterXStartStation, game);
         board--;
@@ -181,7 +197,7 @@ public class GameService  {
     }
 
     public void ticketsDistribution(ScotlandYardGame game) {
-        MisterX misterX = game.getMisterX();
+        MisterX misterX = (MisterX) game.getMisterX();
         Set<Player> detectives = game.getDetectives();
         giveTicketsToMisterX(misterX, game);
         for (Player player : detectives) {
@@ -200,10 +216,10 @@ public class GameService  {
         List<Ticket> misterXTickets = misterX.getTickets();
         Map<TypeTicket, Integer> ticketsMap = misterX.getTicketsMap();
         Set<Player> detectives = game.getDetectives();
-        giveTickets(misterXTickets, ticketsMap, TypeTicket.TAXI, misterX.getAmountTaxiTickets());
-        giveTickets(misterXTickets, ticketsMap, TypeTicket.BUS, misterX.getAmountBusTickets());
-        giveTickets(misterXTickets, ticketsMap, TypeTicket.METRO, misterX.getAmountMetroTickets());     //нужно улучшить
-        giveTickets(misterXTickets, ticketsMap, TypeTicket.DOUBLE, misterX.getAmountDoubleTickets());
+        giveTickets(misterXTickets, ticketsMap, TypeTicket.TAXI, misterX.getMaxAmountTaxiTickets());
+        giveTickets(misterXTickets, ticketsMap, TypeTicket.BUS, misterX.getMaxAmountBusTickets());
+        giveTickets(misterXTickets, ticketsMap, TypeTicket.METRO, misterX.getMaxAmountMetroTickets());     //нужно улучшить
+        giveTickets(misterXTickets, ticketsMap, TypeTicket.DOUBLE, misterX.getMaxAmountDoubleTickets());
         giveTickets(misterXTickets, ticketsMap, TypeTicket.BLACK, detectives.size());
         misterXOnGameService.shuffleTickets(misterX);
     }
@@ -211,10 +227,11 @@ public class GameService  {
     private void giveTicketsToDetective(Detective detective) {
         List<Ticket> detectiveTickets = detective.getTickets();
         Map<TypeTicket, Integer> ticketsMap = detective.getTicketsMap();
-        giveTickets(detectiveTickets, ticketsMap, TypeTicket.BUS, detective.getAmountBusTickets());
-        giveTickets(detectiveTickets, ticketsMap, TypeTicket.TAXI, detective.getAmountTaxiTickets());
-        giveTickets(detectiveTickets, ticketsMap, TypeTicket.METRO, detective.getAmountMetroTickets());
+        giveTickets(detectiveTickets, ticketsMap, TypeTicket.BUS, detective.getMaxAmountBusTickets());
+        giveTickets(detectiveTickets, ticketsMap, TypeTicket.TAXI, detective.getMaxAmountTaxiTickets());
+        giveTickets(detectiveTickets, ticketsMap, TypeTicket.METRO, detective.getMaxAmountMetroTickets());
         detectiveOnGameService.shuffleTickets(detective);
     }
+
 
 }

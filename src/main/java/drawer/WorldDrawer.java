@@ -43,7 +43,7 @@ public class WorldDrawer implements Drawable {
             Vertex vertex = node.getVertex();
             Circle circle = node.getCircle();
             if (locations.containsKey(vertex)) {
-                switch (locations.get(vertex).getTYPE()) {
+                switch (locations.get(vertex).getTypePlayer()) {
                     case MISTER_X:
                         circle.setColor(Color.RED);
                         break;
@@ -64,10 +64,10 @@ public class WorldDrawer implements Drawable {
             Travel travel = entry.getValue();
             Vertex start = travel.getStartStation();
             Vertex target = travel.getTargetStation();
-            TypeRoad typeRoad = ScotlandYardGame.TICKET_ROAD_MAP.get(travel.getTicket().getType());
+            TypeRoad typeRoad = game.TICKET_ROAD_MAP.get(travel.getTicket().getType());
             for (Line road : lines) {
                 if (edgeService.contains(road.getEdge(), start, target, typeRoad)) {
-                    switch (entry.getKey().getTYPE()) {
+                    switch (entry.getKey().getTypePlayer()) {
                         case MISTER_X:
                             road.setColor(Color.RED);
                             break;

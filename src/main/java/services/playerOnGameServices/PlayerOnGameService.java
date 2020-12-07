@@ -23,6 +23,13 @@ public interface PlayerOnGameService {
 
     default Vertex getCurrentStation(Player player, ScotlandYardGame game) {
         Map<Player, Vertex> playerVertexMap = game.getPlayerVertexMap();
+//        System.out.println("object " + player.hashCode());
+//
+//        for (Map.Entry<Player, Vertex> entry : playerVertexMap.entrySet()) {
+//            System.out.println("entry  " + entry.getKey().hashCode() + " " + player.equals(entry.getKey()));
+//        }
+//        Vertex vertex = playerVertexMap.get(player);
+
         return playerVertexMap.get(player);
     }
 

@@ -23,7 +23,7 @@ public class DetectiveService implements PlayerService {
         printer.printMove(player, targetStation, ticket);
     }
 
-    private void removeTicket(Player player, MisterX misterX, Ticket ticket) {
+    private void removeTicket(Player player, Player misterX, Ticket ticket) {
         removeTicket(player, ticket);
         misterXService.addTicket(misterX, ticket);
     }

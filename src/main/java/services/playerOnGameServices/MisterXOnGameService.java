@@ -27,14 +27,14 @@ public class MisterXOnGameService implements PlayerOnGameService {
         TypeTicket typeTicket = ticket.getType();
         Map<TypeRoad, List<Edge>> roadMap = currentStation.getRoadMap();
 
-        if (typeTicket.equals(TypeTicket.BLACK) || typeTicket.equals(TypeTicket.DOUBLE)) {
+            if (typeTicket.equals(TypeTicket.BLACK) || typeTicket.equals(TypeTicket.DOUBLE)) {
             List<Edge> allRoads = new LinkedList<>();
             allRoads.addAll(roadMap.get(TypeRoad.METRO));
             allRoads.addAll(roadMap.get(TypeRoad.TAXI));
             allRoads.addAll(roadMap.get(TypeRoad.BUS));
             return allRoads;
         }
-        return roadMap.get(ScotlandYardGame.TICKET_ROAD_MAP.get(typeTicket));
+        return roadMap.get(game.TICKET_ROAD_MAP.get(typeTicket));
     }
 
     @Override

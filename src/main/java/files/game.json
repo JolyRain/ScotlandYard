@@ -1,1 +1,1030 @@
-{"moveAmount":22,"detectivesAmount":1,"graph":{"vertices":[{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap":{"TAXI":[{"startVertex":{"stationNumber":1,"roadMap"
+{
+  "moveAmount": 22,
+  "currentMove": 10,
+  "detectivesAmount": 1,
+  "gameState": "PLAYING",
+  "graph": {
+    "vertices": [
+      {
+        "stationNumber": "1"
+      },
+      {
+        "stationNumber": "2"
+      },
+      {
+        "stationNumber": "3"
+      },
+      {
+        "stationNumber": "4"
+      },
+      {
+        "stationNumber": "5"
+      },
+      {
+        "stationNumber": "6"
+      },
+      {
+        "stationNumber": "7"
+      },
+      {
+        "stationNumber": "8"
+      },
+      {
+        "stationNumber": "9"
+      },
+      {
+        "stationNumber": "10"
+      },
+      {
+        "stationNumber": "11"
+      },
+      {
+        "stationNumber": "12"
+      },
+      {
+        "stationNumber": "13"
+      },
+      {
+        "stationNumber": "14"
+      },
+      {
+        "stationNumber": "0"
+      }
+    ],
+    "edges": [
+      {
+        "startVertex": {
+          "stationNumber": "0"
+        },
+        "endVertex": {
+          "stationNumber": "1"
+        },
+        "type": "METRO"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "2"
+        },
+        "endVertex": {
+          "stationNumber": "1"
+        },
+        "type": "METRO"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "2"
+        },
+        "endVertex": {
+          "stationNumber": "3"
+        },
+        "type": "METRO"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "3"
+        },
+        "endVertex": {
+          "stationNumber": "4"
+        },
+        "type": "METRO"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "4"
+        },
+        "endVertex": {
+          "stationNumber": "12"
+        },
+        "type": "METRO"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "12"
+        },
+        "endVertex": {
+          "stationNumber": "13"
+        },
+        "type": "METRO"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "13"
+        },
+        "endVertex": {
+          "stationNumber": "14"
+        },
+        "type": "METRO"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "14"
+        },
+        "endVertex": {
+          "stationNumber": "8"
+        },
+        "type": "METRO"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "8"
+        },
+        "endVertex": {
+          "stationNumber": "0"
+        },
+        "type": "METRO"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "0"
+        },
+        "endVertex": {
+          "stationNumber": "7"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "1"
+        },
+        "endVertex": {
+          "stationNumber": "7"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "1"
+        },
+        "endVertex": {
+          "stationNumber": "6"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "1"
+        },
+        "endVertex": {
+          "stationNumber": "2"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "2"
+        },
+        "endVertex": {
+          "stationNumber": "3"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "3"
+        },
+        "endVertex": {
+          "stationNumber": "4"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "4"
+        },
+        "endVertex": {
+          "stationNumber": "12"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "12"
+        },
+        "endVertex": {
+          "stationNumber": "9"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "9"
+        },
+        "endVertex": {
+          "stationNumber": "13"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "13"
+        },
+        "endVertex": {
+          "stationNumber": "12"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "13"
+        },
+        "endVertex": {
+          "stationNumber": "14"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "14"
+        },
+        "endVertex": {
+          "stationNumber": "8"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "8"
+        },
+        "endVertex": {
+          "stationNumber": "11"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "11"
+        },
+        "endVertex": {
+          "stationNumber": "7"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "7"
+        },
+        "endVertex": {
+          "stationNumber": "6"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "6"
+        },
+        "endVertex": {
+          "stationNumber": "2"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "2"
+        },
+        "endVertex": {
+          "stationNumber": "5"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "5"
+        },
+        "endVertex": {
+          "stationNumber": "3"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "5"
+        },
+        "endVertex": {
+          "stationNumber": "4"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "5"
+        },
+        "endVertex": {
+          "stationNumber": "9"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "9"
+        },
+        "endVertex": {
+          "stationNumber": "10"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "10"
+        },
+        "endVertex": {
+          "stationNumber": "11"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "10"
+        },
+        "endVertex": {
+          "stationNumber": "13"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "11"
+        },
+        "endVertex": {
+          "stationNumber": "14"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "11"
+        },
+        "endVertex": {
+          "stationNumber": "6"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "6"
+        },
+        "endVertex": {
+          "stationNumber": "5"
+        },
+        "type": "TAXI"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "11"
+        },
+        "endVertex": {
+          "stationNumber": "6"
+        },
+        "type": "BUS"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "11"
+        },
+        "endVertex": {
+          "stationNumber": "10"
+        },
+        "type": "BUS"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "10"
+        },
+        "endVertex": {
+          "stationNumber": "13"
+        },
+        "type": "BUS"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "13"
+        },
+        "endVertex": {
+          "stationNumber": "12"
+        },
+        "type": "BUS"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "12"
+        },
+        "endVertex": {
+          "stationNumber": "9"
+        },
+        "type": "BUS"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "9"
+        },
+        "endVertex": {
+          "stationNumber": "5"
+        },
+        "type": "BUS"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "5"
+        },
+        "endVertex": {
+          "stationNumber": "3"
+        },
+        "type": "BUS"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "3"
+        },
+        "endVertex": {
+          "stationNumber": "2"
+        },
+        "type": "BUS"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "2"
+        },
+        "endVertex": {
+          "stationNumber": "6"
+        },
+        "type": "BUS"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "4"
+        },
+        "endVertex": {
+          "stationNumber": "12"
+        },
+        "type": "BUS"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "4"
+        },
+        "endVertex": {
+          "stationNumber": "5"
+        },
+        "type": "BUS"
+      },
+      {
+        "startVertex": {
+          "stationNumber": "5"
+        },
+        "endVertex": {
+          "stationNumber": "6"
+        },
+        "type": "BUS"
+      }
+    ]
+  },
+  "misterX": {
+    "PLAYER": {
+      "maxAmountTaxiTickets": 4,
+      "maxAmountBusTickets": 3,
+      "maxAmountMetroTickets": 3,
+      "maxAmountDoubleTickets": 2,
+      "wayBill": {
+        "stepsMap": [
+          [
+            {
+              "stationNumber": "3"
+            },
+            "TAXI"
+          ],
+          [
+            {
+              "stationNumber": "4"
+            },
+            "DOUBLE"
+          ],
+          [
+            {
+              "stationNumber": "5"
+            },
+            "TAXI"
+          ],
+          [
+            {
+              "stationNumber": "9"
+            },
+            "BUS"
+          ],
+          [
+            {
+              "stationNumber": "13"
+            },
+            "TAXI"
+          ],
+          [
+            {
+              "stationNumber": "14"
+            },
+            "METRO"
+          ]
+        ],
+        "stepsToShow": 7
+      },
+      "typePlayer": "MISTER_X",
+      "amount of tickets": {
+        "BUS": 5,
+        "TAXI": 6,
+        "BLACK": 1,
+        "METRO": 4,
+        "DOUBLE": 0
+      },
+      "tickets": [
+        {
+          "type": "BLACK"
+        },
+        {
+          "type": "METRO"
+        },
+        {
+          "type": "BUS"
+        },
+        {
+          "type": "METRO"
+        },
+        {
+          "type": "TAXI"
+        },
+        {
+          "type": "BUS"
+        },
+        {
+          "type": "TAXI"
+        },
+        {
+          "type": "METRO"
+        },
+        {
+          "type": "TAXI"
+        },
+        {
+          "type": "BUS"
+        },
+        {
+          "type": "BUS"
+        },
+        {
+          "type": "METRO"
+        },
+        {
+          "type": "TAXI"
+        },
+        {
+          "type": "TAXI"
+        },
+        {
+          "type": "BUS"
+        },
+        {
+          "type": "TAXI"
+        }
+      ]
+    }
+  },
+  "stations": [
+    {
+      "stationNumber": "1"
+    },
+    {
+      "stationNumber": "2"
+    },
+    {
+      "stationNumber": "3"
+    },
+    {
+      "stationNumber": "4"
+    },
+    {
+      "stationNumber": "5"
+    },
+    {
+      "stationNumber": "6"
+    },
+    {
+      "stationNumber": "7"
+    },
+    {
+      "stationNumber": "8"
+    },
+    {
+      "stationNumber": "9"
+    },
+    {
+      "stationNumber": "10"
+    },
+    {
+      "stationNumber": "11"
+    },
+    {
+      "stationNumber": "12"
+    },
+    {
+      "stationNumber": "13"
+    },
+    {
+      "stationNumber": "14"
+    },
+    {
+      "stationNumber": "0"
+    }
+  ],
+  "vertexPlayerMap": [
+    [
+      {
+        "stationNumber": "2"
+      },
+      {
+        "PLAYER": {
+          "maxAmountTaxiTickets": 10,
+          "maxAmountBusTickets": 8,
+          "maxAmountMetroTickets": 4,
+          "name": "0",
+          "typePlayer": "DETECTIVE",
+          "amount of tickets": {
+            "BUS": 5,
+            "TAXI": 5,
+            "METRO": 2
+          },
+          "tickets": [
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "METRO"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "METRO"
+            }
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "stationNumber": "14"
+      },
+      {
+        "PLAYER": {
+          "maxAmountTaxiTickets": 4,
+          "maxAmountBusTickets": 3,
+          "maxAmountMetroTickets": 3,
+          "maxAmountDoubleTickets": 2,
+          "wayBill": {
+            "stepsMap": [
+              [
+                {
+                  "stationNumber": "3"
+                },
+                "TAXI"
+              ],
+              [
+                {
+                  "stationNumber": "4"
+                },
+                "DOUBLE"
+              ],
+              [
+                {
+                  "stationNumber": "5"
+                },
+                "TAXI"
+              ],
+              [
+                {
+                  "stationNumber": "9"
+                },
+                "BUS"
+              ],
+              [
+                {
+                  "stationNumber": "13"
+                },
+                "TAXI"
+              ],
+              [
+                {
+                  "stationNumber": "14"
+                },
+                "METRO"
+              ]
+            ],
+            "stepsToShow": 7
+          },
+          "typePlayer": "MISTER_X",
+          "amount of tickets": {
+            "BUS": 5,
+            "TAXI": 6,
+            "BLACK": 1,
+            "METRO": 4,
+            "DOUBLE": 0
+          },
+          "tickets": [
+            {
+              "type": "BLACK"
+            },
+            {
+              "type": "METRO"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "METRO"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "METRO"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "METRO"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "TAXI"
+            }
+          ]
+        }
+      }
+    ]
+  ],
+  "playerVertexMap": [
+    [
+      {
+        "PLAYER": {
+          "maxAmountTaxiTickets": 4,
+          "maxAmountBusTickets": 3,
+          "maxAmountMetroTickets": 3,
+          "maxAmountDoubleTickets": 2,
+          "wayBill": {
+            "stepsMap": [
+              [
+                {
+                  "stationNumber": "3"
+                },
+                "TAXI"
+              ],
+              [
+                {
+                  "stationNumber": "4"
+                },
+                "DOUBLE"
+              ],
+              [
+                {
+                  "stationNumber": "5"
+                },
+                "TAXI"
+              ],
+              [
+                {
+                  "stationNumber": "9"
+                },
+                "BUS"
+              ],
+              [
+                {
+                  "stationNumber": "13"
+                },
+                "TAXI"
+              ],
+              [
+                {
+                  "stationNumber": "14"
+                },
+                "METRO"
+              ]
+            ],
+            "stepsToShow": 7
+          },
+          "typePlayer": "MISTER_X",
+          "amount of tickets": {
+            "BUS": 5,
+            "TAXI": 6,
+            "BLACK": 1,
+            "METRO": 4,
+            "DOUBLE": 0
+          },
+          "tickets": [
+            {
+              "type": "BLACK"
+            },
+            {
+              "type": "METRO"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "METRO"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "METRO"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "METRO"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "TAXI"
+            }
+          ]
+        }
+      },
+      {
+        "stationNumber": "14"
+      }
+    ],
+    [
+      {
+        "PLAYER": {
+          "maxAmountTaxiTickets": 10,
+          "maxAmountBusTickets": 8,
+          "maxAmountMetroTickets": 4,
+          "name": "0",
+          "typePlayer": "DETECTIVE",
+          "amount of tickets": {
+            "BUS": 5,
+            "TAXI": 5,
+            "METRO": 2
+          },
+          "tickets": [
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "METRO"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "BUS"
+            },
+            {
+              "type": "TAXI"
+            },
+            {
+              "type": "METRO"
+            }
+          ]
+        }
+      },
+      {
+        "stationNumber": "2"
+      }
+    ]
+  ],
+  "detectives": [
+    {
+      "PLAYER": {
+        "maxAmountTaxiTickets": 10,
+        "maxAmountBusTickets": 8,
+        "maxAmountMetroTickets": 4,
+        "name": "0",
+        "typePlayer": "DETECTIVE",
+        "amount of tickets": {
+          "BUS": 5,
+          "TAXI": 5,
+          "METRO": 2
+        },
+        "tickets": [
+          {
+            "type": "BUS"
+          },
+          {
+            "type": "TAXI"
+          },
+          {
+            "type": "TAXI"
+          },
+          {
+            "type": "BUS"
+          },
+          {
+            "type": "BUS"
+          },
+          {
+            "type": "TAXI"
+          },
+          {
+            "type": "TAXI"
+          },
+          {
+            "type": "METRO"
+          },
+          {
+            "type": "BUS"
+          },
+          {
+            "type": "BUS"
+          },
+          {
+            "type": "TAXI"
+          },
+          {
+            "type": "METRO"
+          }
+        ]
+      }
+    }
+  ]
+}

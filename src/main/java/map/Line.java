@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.geom.Line2D;
 import java.io.Serializable;
 
-public class Line implements Serializable {
+public class Line {
     private Line2D line;
     private Edge edge;
     private Color color;

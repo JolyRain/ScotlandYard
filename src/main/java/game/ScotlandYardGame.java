@@ -3,6 +3,7 @@ package game;
 import graph.Graph;
 import graph.TypeRoad;
 import graph.Vertex;
+import players.Detective;
 import players.MisterX;
 import players.Player;
 
@@ -13,10 +14,11 @@ import java.util.Map;
 import java.util.Set;
 
 public class ScotlandYardGame  {
-    public static final Map<TypeTicket, TypeRoad> TICKET_ROAD_MAP = new HashMap<>();
-    public static final Map<TypeTicket, TypeRoad> ROAD_TICKET_MAP = new HashMap<>();
+    public transient final Map<TypeTicket, TypeRoad> TICKET_ROAD_MAP = new HashMap<>();
+    public transient final Map<TypeTicket, TypeRoad> ROAD_TICKET_MAP = new HashMap<>();
 
-    static {
+
+    private void initMaps() {
         TICKET_ROAD_MAP.put(TypeTicket.TAXI, TypeRoad.TAXI);
         TICKET_ROAD_MAP.put(TypeTicket.BUS, TypeRoad.BUS);         //улучшить
         TICKET_ROAD_MAP.put(TypeTicket.METRO, TypeRoad.METRO);
@@ -26,19 +28,55 @@ public class ScotlandYardGame  {
     }
 
     private Integer moveAmount;
+    private Integer currentMove;
     private Integer detectivesAmount;
-    private Graph graph;
     private GameState gameState;
+    private Graph graph;
+    private Player misterX;
+    private List<Vertex> stations;
+
+
     private Map<Vertex, Player> vertexPlayerMap;
     private Map<Player, Vertex> playerVertexMap;
     private Set<Player> detectives;
-    private MisterX misterX;
-    private List<Vertex> stations;
-    private Map<Player, Travel> travels;
+    private transient Map<Player, Travel> travels;
 
     public ScotlandYardGame(Integer moveAmount, Integer detectivesAmount) {
         this.moveAmount = moveAmount;
         this.detectivesAmount = detectivesAmount;
+        initMaps();
+        currentMove = 0;
+    }
+
+    public ScotlandYardGame() {
+        initMaps();
+    }
+
+    public Player getPlayer(Player player) {
+        switch (player.getTypePlayer()) {
+            case MISTER_X:
+                return misterX;
+            case DETECTIVE:
+                return getDetective((Detective) player);
+        }
+        return null;
+    }
+
+    private Player getDetective(Detective detective) {
+        for (Player player : detectives) {
+            Detective currentDetective = (Detective) player;
+            if (detective.getName().equals(currentDetective.getName()))
+                return player;
+        }
+        return null;
+    }
+
+    public Integer getCurrentMove() {
+        return currentMove;
+    }
+
+    public void setCurrentMove(Integer currentMove) {
+        this.currentMove = currentMove;
     }
 
     public Graph getGraph() {
@@ -81,7 +119,7 @@ public class ScotlandYardGame  {
         this.detectives = detectives;
     }
 
-    public MisterX getMisterX() {
+    public Player getMisterX() {
         return misterX;
     }
 
@@ -119,6 +157,26 @@ public class ScotlandYardGame  {
 
     public void setTravels(Map<Player, Travel> travels) {
         this.travels = travels;
+    }
+
+    public Map<TypeTicket, TypeRoad> getTICKET_ROAD_MAP() {
+        return TICKET_ROAD_MAP;
+    }
+
+    public Map<TypeTicket, TypeRoad> getROAD_TICKET_MAP() {
+        return ROAD_TICKET_MAP;
+    }
+
+    public GameState getGameState() {
+        return gameState;
+    }
+
+    public void setGameState(GameState gameState) {
+        this.gameState = gameState;
+    }
+
+    public void setMisterX(Player misterX) {
+        this.misterX = misterX;
     }
 
     @Override

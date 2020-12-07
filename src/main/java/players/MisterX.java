@@ -1,59 +1,75 @@
 package players;
 
+import game.Ticket;
 import game.TypePlayer;
+import game.TypeTicket;
 import game.WayBill;
 
-import java.io.Serializable;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 public class MisterX extends Player  {
 
-    private Integer amountTaxiTickets;
-    private Integer amountBusTickets;
-    private Integer amountMetroTickets;
-    private Integer amountDoubleTickets;
+    private Integer maxAmountTaxiTickets;
+
+    private Integer maxAmountBusTickets;
+
+    private Integer maxAmountMetroTickets;
+
+    private Integer maxAmountDoubleTickets;
 
     private WayBill wayBill;
 
     public MisterX() {
         super(TypePlayer.MISTER_X);
         wayBill = new WayBill(new HashMap<>());
-        amountTaxiTickets = 4;
-        amountBusTickets = 3;
-        amountMetroTickets = 3;
-        amountDoubleTickets = 2;
+        maxAmountTaxiTickets = 4;
+        maxAmountBusTickets = 3;
+        maxAmountMetroTickets = 3;
+        maxAmountDoubleTickets = 2;
     }
 
-    public Integer getAmountTaxiTickets() {
-        return amountTaxiTickets;
+    public MisterX(TypePlayer typePlayer, Map<TypeTicket, Integer> ticketsMap, List<Ticket> tickets, Integer maxAmountTaxiTickets, Integer maxAmountBusTickets, Integer maxAmountMetroTickets, Integer maxAmountDoubleTickets, WayBill wayBill) {
+        super(typePlayer, ticketsMap, tickets);
+        this.maxAmountTaxiTickets = maxAmountTaxiTickets;
+        this.maxAmountBusTickets = maxAmountBusTickets;
+        this.maxAmountMetroTickets = maxAmountMetroTickets;
+        this.maxAmountDoubleTickets = maxAmountDoubleTickets;
+        this.wayBill = wayBill;
     }
 
-    public void setAmountTaxiTickets(Integer amountTaxiTickets) {
-        this.amountTaxiTickets = amountTaxiTickets;
+    public Integer getMaxAmountTaxiTickets() {
+        return maxAmountTaxiTickets;
     }
 
-    public Integer getAmountBusTickets() {
-        return amountBusTickets;
+    public void setMaxAmountTaxiTickets(Integer maxAmountTaxiTickets) {
+        this.maxAmountTaxiTickets = maxAmountTaxiTickets;
     }
 
-    public void setAmountBusTickets(Integer amountBusTickets) {
-        this.amountBusTickets = amountBusTickets;
+    public Integer getMaxAmountBusTickets() {
+        return maxAmountBusTickets;
     }
 
-    public Integer getAmountMetroTickets() {
-        return amountMetroTickets;
+    public void setMaxAmountBusTickets(Integer maxAmountBusTickets) {
+        this.maxAmountBusTickets = maxAmountBusTickets;
     }
 
-    public void setAmountMetroTickets(Integer amountMetroTickets) {
-        this.amountMetroTickets = amountMetroTickets;
+    public Integer getMaxAmountMetroTickets() {
+        return maxAmountMetroTickets;
     }
 
-    public Integer getAmountDoubleTickets() {
-        return amountDoubleTickets;
+    public void setMaxAmountMetroTickets(Integer maxAmountMetroTickets) {
+        this.maxAmountMetroTickets = maxAmountMetroTickets;
     }
 
-    public void setAmountDoubleTickets(Integer amountDoubleTickets) {
-        this.amountDoubleTickets = amountDoubleTickets;
+    public Integer getMaxAmountDoubleTickets() {
+        return maxAmountDoubleTickets;
+    }
+
+    public void setMaxAmountDoubleTickets(Integer maxAmountDoubleTickets) {
+        this.maxAmountDoubleTickets = maxAmountDoubleTickets;
     }
 
     public WayBill getWayBill() {
@@ -63,5 +79,6 @@ public class MisterX extends Player  {
     public void setWayBill(WayBill wayBill) {
         this.wayBill = wayBill;
     }
+
 
 }

@@ -1,29 +1,42 @@
 package players;
 
+import com.google.gson.annotations.SerializedName;
 import game.Ticket;
-import game.TypeTicket;
 import game.TypePlayer;
+import game.TypeTicket;
 
-import java.io.Serializable;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-public abstract class Player  {
+public abstract class Player {
 
-    private final TypePlayer TYPE;
+    private TypePlayer typePlayer;
+
+    @SerializedName("amount of tickets")
     private Map<TypeTicket, Integer> ticketsMap;
+
     private List<Ticket> tickets;
 
     Player(TypePlayer type) {
-        this.TYPE = type;
+        this.typePlayer = type;
         ticketsMap = new HashMap<>();
         tickets = new LinkedList<>();
     }
 
-    public TypePlayer getTYPE() {
-        return TYPE;
+    public Player(TypePlayer typePlayer, Map<TypeTicket, Integer> ticketsMap, List<Ticket> tickets) {
+        this.typePlayer = typePlayer;
+        this.ticketsMap = ticketsMap;
+        this.tickets = tickets;
+    }
+
+    public Player() {
+    }
+
+    public void setTypePlayer(TypePlayer typePlayer) {
+        this.typePlayer = typePlayer;
+    }
+
+    public TypePlayer getTypePlayer() {
+        return typePlayer;
     }
 
     public Map<TypeTicket, Integer> getTicketsMap() {
@@ -44,7 +57,7 @@ public abstract class Player  {
 
     @Override
     public String toString() {
-        return TYPE.toString();
+        return typePlayer.toString();
     }
 
     public String ticketsToString() {
@@ -56,4 +69,6 @@ public abstract class Player  {
         stringBuilder.append("]");
         return stringBuilder.toString();
     }
+
+
 }

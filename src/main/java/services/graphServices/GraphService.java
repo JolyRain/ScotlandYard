@@ -5,7 +5,6 @@ import graph.Graph;
 import graph.TypeRoad;
 import graph.Vertex;
 
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -14,16 +13,10 @@ public class GraphService {
 
     private EdgeService edgeService = new EdgeService();
 
-    private Iterable<Vertex> adjacent(Graph graph, Vertex vertex) {
-        return graph.getAdjacencyMap().get(vertex);
-    }
-
-    public boolean addVertex(Graph graph, Vertex vertex) {
-        Map<Vertex, Set<Vertex>> adjacencyMap = graph.getAdjacencyMap();
+    public void addVertex(Graph graph, Vertex vertex) {
         Set<Vertex> vertices = graph.getVertices();
-        vertex.setStationNumber(vertices.size());
-        adjacencyMap.put(vertex, new HashSet<>());
-        return vertices.add(vertex);
+//        vertex.setStationNumber(vertices.size());
+        vertices.add(vertex);
     }
 
     public Vertex getVertex(Graph graph, Integer stationNumber) {
@@ -33,15 +26,6 @@ public class GraphService {
         }
         return null;
     }
-
-//    private boolean isAdjacent(Graph graph, Vertex firstVertex, Vertex secondVertex, TypeRoad typeRoad) {
-//        for (Vertex adjacentVertex : adjacent(graph, firstVertex)) {
-//            if (hasPath(graph, firstVertex, secondVertex, typeRoad)) {
-//                    return true;
-//            }
-//        }
-//        return false;
-//    }
 
     private boolean hasPath(Vertex firstVertex, Vertex secondVertex, TypeRoad typeRoad) {
         Map<TypeRoad, List<Edge>> roadMap = firstVertex.getRoadMap();
@@ -66,12 +50,9 @@ public class GraphService {
     }
 
     public void addEdge(Graph graph, Edge edge) {
-        Map<Vertex, Set<Vertex>> adjacencyMap = graph.getAdjacencyMap();
         Vertex startVertex = edge.getStartVertex();
         Vertex endVertex = edge.getEndVertex();
         if (!hasPath(startVertex, endVertex, edge.getType())) {
-            adjacencyMap.get(startVertex).add(endVertex);
-            adjacencyMap.get(endVertex).add(startVertex);
             Map<TypeRoad, List<Edge>> roadMap = startVertex.getRoadMap();
             List<Edge> edgeList = roadMap.get(edge.getType());
             edgeList.add(edge);
@@ -90,10 +71,8 @@ public class GraphService {
     }
 
     public void clear(Graph graph) {
-        Map<Vertex, Set<Vertex>> adjacencyMap = graph.getAdjacencyMap();
         Set<Vertex> vertices = graph.getVertices();
         List<Edge> edges = graph.getEdges();
-        if (adjacencyMap != null) adjacencyMap.clear();
         if (vertices != null) vertices.clear();
         if (edges != null) edges.clear();
     }
